@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FreeAgent vs Xero: which suits a UK small business — Biz Software Tested</title>
+<meta name="description" content="FreeAgent vs Xero compared for UK small businesses, after trialling both — invoicing, bank reconciliation, VAT returns and reverse charge, with the genuine setup traps found in each.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Biz Software Tested</a>
+    <nav>
+      <a href="compare.html">Compare</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="sectors.html">By sector</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <h1>FreeAgent vs Xero: which suits a UK small business</h1>
+  <p class="lede">Xero is the faster product to get invoicing in. FreeAgent asks more up front — including your VAT registration details — but its onboarding wizard catches things Xero lets you skip. Both got VAT treatment wrong on the same two kinds of transaction, and FreeAgent's reverse charge handling is correct but genuinely easy to miss.</p>
+  <p class="meta">Published 29 September 2026 · Xero trialled for one session · FreeAgent trialled for one session</p>
+
+  <!-- Disclosure ABOVE the content, per UK ASA rules. -->
+  <div class="disclosure">
+    <strong>Affiliate links:</strong> this page does not currently carry any live affiliate links to Xero or FreeAgent — I haven't applied to either programme yet (I do that once there's a real run of articles published, not before). If that changes, this notice will say so and link to the <a href="disclosure.html">full disclosure</a>. Nothing below was written to flatter either product either way.
+  </div>
+
+  <p class="badge">Trialled: Xero Ignite plan, one sitting (28 Sept 2026) · FreeAgent, one sitting (29 Sept 2026)</p>
+
+  <h2>The short answer</h2>
+  <div class="verdict">
+    <p><strong>Pick Xero if:</strong> you want the fastest route to a working invoice with the least setup, and you're prepared to double-check its auto-suggested nominal accounts and VAT rates — in this test it defaulted an overseas software subscription and commercial rent to the wrong VAT treatment.</p>
+    <p><strong>Pick FreeAgent if:</strong> you're comfortable with a more thorough upfront setup (it wants your VAT registration and accounting dates before you can invoice) in exchange for a product that leans on structured settings rather than freeform guessing — but go in knowing that useful features like the VAT reverse charge are switched off by default and live in a settings page and an "Adjustments" panel most people won't find without looking.</p>
+    <p><strong>If you're genuinely undecided:</strong> both handled invoicing and VAT returns fully in this test. Xero's bank reconciliation accepted a much more forgiving CSV format; FreeAgent's rejected the same file outright until I stripped the header row to match its stricter, undocumented-in-app format. Neither is a dealbreaker on its own, but they're the kind of friction that matters when you're setting this up for the first time with no one to ask.</p>
+  </div>
+
+  <h2>How I tested them</h2>
+  <p>I signed up for genuine free trials of both — Xero's Ignite plan and FreeAgent's 30-day trial (Limited Company) — using a sample company called "Test Company Ltd" with no real business data anywhere near either account. In each, in one sitting, I raised and sent a sales invoice, added a manual bank account and reconciled five transactions against an imported statement, and ran a full UK VAT return. No real bank was ever connected to either account, and neither return was filed or connected to HMRC.</p>
+  <p><strong>Important:</strong> all testing used sample or dummy data. Nothing from my employer's systems, or any real client's, went anywhere near either account.</p>
+  <p>This is one sitting on each platform — not months of daily use. Before this page is treated as final, it needs more real-world testing: a second session on each trying something not covered here (voiding an invoice, a second VAT period, payroll), and ideally a look at how each handles a real bank feed rather than a manually imported statement.</p>
+
+  <h2>Pricing</h2>
+  <table>
+    <thead><tr><th>Plan</th><th>Xero</th><th>FreeAgent</th></tr></thead>
+    <tbody>
+      <tr><td>Entry (monthly)</td><td>Ignite — £18/month (excl. VAT) after a free month</td><td>£16.50/month (excl. VAT) for 6 months, then £33/month</td></tr>
+      <tr><td>Entry (annual)</td><td>Not tested this session</td><td>£165/year (excl. VAT) for year one, then £330/year</td></tr>
+      <tr><td>Mid</td><td>Grow — £39/month</td><td>Not tiered the same way — one core plan plus optional add-ons (unlimited receipt/bill capture, Amazon connection)</td></tr>
+      <tr><td>Top</td><td>Comprehensive — £55/month</td><td>Not tiered the same way — see above</td></tr>
+      <tr><td>Free option?</td><td>No</td><td>Yes — free for NatWest, Royal Bank of Scotland, Ulster Bank or Mettle business account holders, for as long as the account is retained (Mettle needs one transaction a month)</td></tr>
+      <tr><td>VAT return included?</td><td>Yes, all plans</td><td>Yes</td></tr>
+      <tr><td>Free trial</td><td>1 month free, no card required</td><td>30 days free, no card required</td></tr>
+    </tbody>
+  </table>
+  <p class="meta">Prices checked 29 September 2026 from each vendor's own pricing page. SaaS pricing changes often and introductory discounts expire — check the live price before you sign up. FreeAgent's pricing structure (one plan by business type, sold monthly or annually, with a bank-linked free tier) is genuinely different in shape from Xero's tiered plans, so this table is comparing what's actually offered rather than forcing them into identical rows.</p>
+
+  <h2>Where they genuinely differ</h2>
+  <p>Both do invoicing, bank feeds, and VAT returns — that's table stakes. Here's what actually differed once I was inside each one.</p>
+
+  <h3>Getting set up</h3>
+  <p><strong>Xero</strong> drops you into a working account after about four onboarding questions — noticeably light-touch. VAT registration and accounting dates aren't asked for up front; you configure them later if you need to.</p>
+  <p><strong>FreeAgent</strong> runs a structured five-step wizard — Business Details, Accounting Dates, VAT Details, About You, Banking Setup — and the VAT step wants your registration number, effective date and first return period end date before you can move on. Slower to your first invoice, but it means VAT is actually configured rather than something you might forget to set up later. The Banking Setup step defaults to connecting a real bank via Open Banking — I used "Connect later" and added a manual account instead, exactly as I did with Xero, and it took no extra typing to finish that step (sensible defaults throughout).</p>
+
+  <h3>Raising an invoice</h3>
+  <p><strong>Xero</strong> builds the whole invoice — contact, line items, totals — on one page. Typing an unrecognised contact name offers "Create as new contact" inline. Typing a line-item description auto-suggests both the nominal account and VAT rate. Xero blocks you from approving with no due date set, and warns (but doesn't block) on a missing contact address.</p>
+  <p><strong>FreeAgent</strong> splits this into two steps: create the invoice header (contact, reference, date, payment terms) first, then add line items via a small popup afterwards. Adding a new contact opens a lightweight modal (only a name or organisation is required) rather than Xero's type-to-create. Payment terms defaulted to 30 days automatically, no manual due-date entry needed. The line-item form has no nominal-account field at all — just quantity, description, unit price and VAT rate, which defaulted sensibly to Standard 20% without me picking it. No address-compliance warning appeared anywhere in the flow. The whole invoice renders as a live preview on the page as you build it, which is a genuinely nice touch — you see exactly what the client will see without a separate step.</p>
+
+  <h3>Bank reconciliation</h3>
+  <p><strong>Xero</strong> accepted a CSV with a header row and named columns with zero fiddling, auto-mapping everything correctly. It pre-matched an invoice payment automatically and offered nominal-account and VAT-rate suggestions for the rest — right three times out of five.</p>
+  <p><strong>FreeAgent — the CSV import is noticeably less forgiving.</strong> My first upload attempt, with a header row (the same shape that worked instantly in Xero), was flatly rejected with "File could not be uploaded" and no further detail. I had to look up FreeAgent's own support documentation to find the actual required format: exactly three columns (date, amount, description), <strong>no header row</strong>, no commas, no quote marks, outgoing amounts as negative numbers. Once reformatted, the upload worked and FreeAgent auto-matched the invoice payment just as cleanly as Xero did, with the same "guess explanations" feature suggesting a category and VAT treatment for every line. Its guesses were about as accurate as Xero's — right on stationery, wrong on client entertainment (defaulted to standard-rate reclaimable VAT, when entertainment VAT isn't reclaimable) and wrong by default on rent (defaulted to 20% VAT, when commercial rent is often exempt). Two out of three platforms tested so far default rent to standard-rated VAT — a shared blind spot worth knowing about, not a one-off.</p>
+
+  <h3>VAT return, and the reverse charge</h3>
+  <p>Both generate the standard HMRC 9-box return automatically and let you view it without connecting to HMRC or filing (Xero via a "VAT without MTD" option, FreeAgent by simply leaving the return in "Unfiled" status). Neither forced an MTD decision before showing me the figures.</p>
+  <p><strong>Xero's</strong> standout was handling the reverse charge on an overseas software subscription (Adobe) completely automatically, front and centre in the transaction dropdown, with no extra configuration.</p>
+  <p><strong>FreeAgent handles the reverse charge correctly too — but not by default, and I nearly wrote this up as a missing feature before I checked.</strong> On the same kind of transaction (an Adobe subscription), the plain VAT-rate dropdown I used first had no reverse-charge option at all. It turns out this needs a setting most people won't stumble onto: Settings &gt; VAT Registration &gt; "Do you need to use VAT rates other than standard UK ones?", switched off by default. Once switched on, the option appears — not in the everyday dropdown, but via an "Adjustments" button and a separate "Edit an Explanation" screen. Applied correctly, it moved the figures exactly the way Xero's did: Box 1 and Box 4 both picked up the same £10.00 (self-cancelling), and Box 5 landed on exactly £0.00. Mechanically identical to Xero. The difference is entirely about defaults and discoverability — Xero exposes this inline where you'd naturally be working; FreeAgent has it right, gated behind a setting and a secondary screen, which is exactly the kind of thing a business owner without an accountant could miss for months without ever knowing their VAT return was wrong.</p>
+
+  <h2>What annoyed me about each</h2>
+  <p><strong>Xero:</strong> the same VAT-inclusive/exclusive inconsistency flagged in the Sage comparison — invoice amounts are treated as VAT-exclusive by default, bank reconciliation amounts as VAT-inclusive. Easy to miscount if you're not paying attention to which screen you're on.</p>
+  <p><strong>FreeAgent:</strong> the CSV import format is stricter than it needs to be and the in-app error message ("File could not be uploaded") gives you nothing to go on — you have to already know, or go and find, FreeAgent's own support article to fix it. The reverse-charge save also failed silently once during testing (picked "Reverse Charge" but left the VAT rate on a fixed 20% instead of "Auto", which the form doesn't flag clearly before you submit) — it reverted with no visible error rather than telling me what was wrong. Small things individually, but they add up to more friction than Xero for anyone setting this up alone.</p>
+
+  <h2>Switching between them</h2>
+  <p>I haven't migrated a chart of accounts, historical invoices, or VAT history between the two, and I'm not going to guess at how painful that is. If you're considering a switch, check each vendor's own migration documentation or ask their support before committing — not something either of us should take on faith from a comparison page.</p>
+
+  <h2>Who this is not for</h2>
+  <p><strong>Xero isn't for you</strong> if you're planning to accept its suggested nominal accounts and VAT rates without checking them — in this test and the earlier Xero/Sage test it was wrong on client entertainment and commercial rent. It suits someone who wants speed and will still keep an eye on the defaults.</p>
+  <p><strong>FreeAgent isn't for you</strong> if you want everything working correctly out of the box with no settings to hunt for — the reverse charge in particular is easy to leave switched off without realising your VAT return is wrong as a result. It suits someone prepared to go through its more thorough setup once, properly, ideally with an accountant checking the VAT settings alongside them. Its free tier for NatWest/RBS/Ulster/Mettle account holders is also worth knowing about specifically if you already bank with one of those — it changes the pricing comparison entirely for that group.</p>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>Biz Software Tested — independent UK small business software reviews.</p>
+    <p><a href="about.html">About</a> · <a href="disclosure.html">Affiliate disclosure</a> · <a href="privacy.html">Privacy</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
