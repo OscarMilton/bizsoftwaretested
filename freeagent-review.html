@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FreeAgent review — Biz Software Tested</title>
+<meta name="description" content="FreeAgent reviewed for UK small businesses after a genuine trial — a thorough setup wizard, correct-but-hidden VAT reverse charge handling, and a strict CSV import.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Biz Software Tested</a>
+    <nav>
+      <a href="compare.html">Compare</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="sectors.html">By sector</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <h1>FreeAgent review</h1>
+  <p class="lede">A more thorough setup than Xero's, with the VAT reverse charge handled correctly once you find where it's hidden — which is exactly the problem. Free if you bank with NatWest, RBS, Ulster or Mettle, which changes the calculus entirely for that group.</p>
+  <p class="meta">Published 30 September 2026 · 30-day trial, Limited Company, trialled for one sitting (29 September 2026)</p>
+
+  <!-- Disclosure ABOVE the content, per UK ASA rules. -->
+  <div class="disclosure">
+    <strong>Affiliate links:</strong> this page does not currently carry any live affiliate links to FreeAgent — I haven't applied to its programme yet (I do that once there's a real run of articles published, not before). If that changes, this notice will say so and link to the <a href="disclosure.html">full disclosure</a>.
+  </div>
+
+  <p class="badge">Trialled: FreeAgent 30-day trial, Limited Company, one sitting, sample data only ("Test Company Ltd")</p>
+
+  <h2>The short version</h2>
+  <div class="verdict">
+    <p><strong>Good for:</strong> someone prepared to go through a more thorough setup once, properly — FreeAgent asks for your VAT registration and accounting dates up front, which means VAT is actually configured rather than something you might forget to set up later.</p>
+    <p><strong>Not for:</strong> someone who wants everything correct out of the box with no settings to hunt for. The VAT reverse charge, in particular, is switched off by default and genuinely easy to miss.</p>
+  </div>
+
+  <h2>How I tested it</h2>
+  <p>I signed up for a genuine FreeAgent 30-day trial (Limited Company) using a sample company, "Test Company Ltd", with no real business data anywhere near the account. In one sitting I raised and sent a sales invoice, added a manual bank account and reconciled five transactions against an imported statement, and ran a full UK VAT return without connecting to HMRC or filing it.</p>
+  <p><strong>Important:</strong> all testing used sample or dummy data. Nothing from my employer's systems went anywhere near this account.</p>
+  <p>This is one sitting, not months of daily use — treat this as a first-impressions review of setup, invoicing and reconciliation, not a verdict on running a business on FreeAgent for a year.</p>
+
+  <h2>Pricing</h2>
+  <table>
+    <thead><tr><th>Plan</th><th>Price</th></tr></thead>
+    <tbody>
+      <tr><td>Monthly</td><td>£16.50/month (excl. VAT) for 6 months, then £33/month</td></tr>
+      <tr><td>Annual</td><td>£165/year (excl. VAT) for year one, then £330/year</td></tr>
+      <tr><td>Free option?</td><td>Yes — free for NatWest, Royal Bank of Scotland, Ulster Bank or Mettle business account holders, for as long as the account is retained (Mettle needs one transaction a month)</td></tr>
+      <tr><td>VAT return included?</td><td>Yes</td></tr>
+      <tr><td>Free trial</td><td>30 days free, no card required</td></tr>
+    </tbody>
+  </table>
+  <p class="meta">Prices checked 29 September 2026 from FreeAgent's own pricing page. SaaS pricing changes often and introductory discounts expire — check the live price before you sign up. FreeAgent's pricing structure (one plan by business type, sold monthly or annually, with a bank-linked free tier) is genuinely different in shape from tiered competitors like Xero and Sage, so it doesn't map onto a simple entry/mid/top table.</p>
+
+  <h2>What's good</h2>
+  <p>The five-step setup wizard (Business Details, Accounting Dates, VAT Details, About You, Banking Setup) is slower to your first invoice than Xero's, but it means VAT is actually configured rather than something you might forget about. Adding a new contact opens a lightweight modal needing only a name or organisation. Payment terms defaulted to 30 days automatically, no manual due-date entry needed, and VAT rate defaulted sensibly to Standard 20% without me picking it. The whole invoice renders as a live preview as you build it — you see exactly what the client will see, without a separate step.</p>
+  <p>Bank reconciliation, once the CSV was in the right format (see below), auto-matched an invoice payment just as cleanly as Xero did, and its "guess explanations" feature suggested a category and VAT treatment for every remaining line, with similar accuracy to Xero's. And once switched on, the VAT reverse charge on an overseas software subscription moved the figures exactly the way Xero's did — Box 1 and Box 4 both picked up the same amount, self-cancelling, Box 5 landing on exactly £0.00. Mechanically identical to Xero, just harder to find.</p>
+
+  <h2>What annoyed me</h2>
+  <p>The CSV import for bank reconciliation is noticeably stricter than it needs to be. My first upload attempt, with a header row — the same shape that worked instantly in Xero — was flatly rejected with "File could not be uploaded" and no further detail. I had to look up FreeAgent's own support documentation to find the actual required format: exactly three columns (date, amount, description), no header row, no commas, no quote marks, outgoing amounts as negative numbers.</p>
+  <p>The VAT reverse charge is correct but not discoverable. On an overseas software subscription, the everyday VAT-rate dropdown had no reverse-charge option at all — it needs a setting most people won't stumble onto: Settings &gt; VAT Registration &gt; "Do you need to use VAT rates other than standard UK ones?", switched off by default. Once switched on, the option appears not in the everyday dropdown but via an "Adjustments" button and a separate "Edit an Explanation" screen — exactly the kind of thing a business owner without an accountant could miss for months without ever knowing their VAT return was wrong. The reverse-charge save also failed silently once during testing — I'd picked "Reverse Charge" but left the VAT rate on a fixed 20% instead of "Auto", and the form didn't flag it clearly before I submitted; it reverted with no visible error rather than telling me what was wrong.</p>
+
+  <h2>Who this isn't for</h2>
+  <p>If you want everything working correctly out of the box with no settings to hunt for, FreeAgent isn't that — the reverse charge in particular is easy to leave switched off without realising your VAT return is wrong as a result. It suits someone prepared to go through its more thorough setup once, properly, ideally with an accountant checking the VAT settings alongside them. Its free tier for NatWest/RBS/Ulster/Mettle account holders is worth knowing about specifically if you already bank with one of those — it changes the pricing picture entirely for that group.</p>
+  <p>See also: <a href="freeagent-vs-xero.html">FreeAgent vs Xero</a>.</p>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>Biz Software Tested — independent UK small business software reviews.</p>
+    <p><a href="about.html">About</a> · <a href="disclosure.html">Affiliate disclosure</a> · <a href="privacy.html">Privacy</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
