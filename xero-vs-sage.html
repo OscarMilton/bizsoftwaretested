@@ -24,8 +24,8 @@
 <main class="wrap">
 
   <h1>Xero vs Sage: which suits a UK small business</h1>
-  <p class="lede">Xero is the smoother product to test-drive, but it still gets real VAT-treatment defaults wrong two times in five. Sage leans on stricter compliance prompts — and, in this testing, its bank reconciliation genuinely didn't work.</p>
-  <p class="meta">Published 29 September 2026 · Xero trialled for one session · Sage Accounting trialled across two sessions</p>
+  <p>In the recorded session Xero accepted the sample CSV and matched an invoice payment. The specific VAT-suggestion accuracy claims are under evidence review and should not be treated as a measured error rate.</p>
+  <p class="meta">Published 29 September 2026 · Xero trialled for one session · Sage Accounting trialled across two sessions · Editorial corrections 11 October 2026</p>
 
   <!-- Disclosure ABOVE the content, per UK ASA rules. -->
   <div class="disclosure">
@@ -33,12 +33,13 @@
   </div>
 
   <p class="badge">Trialled: Xero Ignite plan, one sitting (28 Sept 2026) · Sage Accounting Start plan, two sittings (28–29 Sept 2026)</p>
+<div class="disclosure"><strong>Evidence check — 11 October 2026:</strong> Earlier write-ups disagree about which Xero transactions received incorrect VAT suggestions and whether the reverse-charge treatment was automatic or selected manually. The original testing notes have not yet been recovered. Those specific findings are unverified; this page does not use them to rank VAT accuracy. No new product testing was performed for this correction.</div>
 
   <h2>The short answer</h2>
   <div class="verdict">
-    <p><strong>Pick Xero if:</strong> you want the faster, cleaner onboarding and you already know your own VAT treatment well enough to catch Xero when it guesses wrong — which it did, twice, in this test.</p>
+    <p>In the recorded session Xero accepted the sample CSV and matched an invoice payment. The specific VAT-suggestion accuracy claims are under evidence review and should not be treated as a measured error rate.</p>
     <p><strong>Pick Sage if:</strong> you want a product that leans harder on compliance defaults (forced two-factor authentication, an explicit sign-off before opting out of Making Tax Digital) — but go in with your eyes open: the bank reconciliation side of Sage Accounting was broken both times I tried it, on two separate days.</p>
-    <p><strong>If you're genuinely undecided:</strong> right now I can only vouch for Xero end to end. Every task I tried in Xero worked, with defaults worth double-checking. Sage's invoicing and VAT return worked; its bank reconciliation didn't function at all during testing. That's not a small caveat — reconciliation is core to daily use of either product.</p>
+    <p><strong>If you're genuinely undecided:</strong> Xero completed the three sample tasks in this session. Every task I tried in Xero worked, with defaults worth double-checking. Sage's invoicing and VAT return worked; its bank reconciliation didn't function at all during testing. That's not a small caveat — reconciliation is core to daily use of either product.</p>
   </div>
 
   <h2>How I tested them</h2>
@@ -69,11 +70,11 @@
   <p><strong>Sage</strong> went the other way on almost every point. It does <em>not</em> auto-suggest a nominal account or VAT rate from the description text at all — the category just sits on whatever default is set in your account settings (out of the box, an unhelpful "4900 – Other income"), so you're choosing every time, or living with the default. Its invoice-address requirement is stricter than Xero's — genuinely required, not just a warning — but far less helpfully enforced: clicking Save with no address did nothing at all, no popup, just a small red icon you had to notice yourself, versus Xero's specific pop-up message. On the plus side, Sage auto-calculated a sensible due date with zero manual input, where Xero makes you pick one every time (Xero does offer handy quick-select shortcuts once you're there, to be fair).</p>
 
   <h3>Bank reconciliation</h3>
-  <p><strong>Xero</strong> worked cleanly. With no live bank feed linked (deliberately — I never connected a real bank), I added a manual account and imported a five-line sample statement as a CSV. Xero auto-mapped every column from the headers, pre-matched the invoice payment automatically, and offered sensible account and VAT-rate suggestions for the other four lines — correct three times out of five, and wrong twice: it defaulted a software subscription to "Exempt Expenses" when the correct UK treatment was a reverse charge, and defaulted commercial rent to 20% VAT when rent is often VAT-exempt. Both are easy to miss if you're rubber-stamping Xero's suggestions rather than checking them.</p>
-  <p><strong>Sage — I could not complete this test.</strong> Every route into recording a bank transaction hit the same error page ("Sorry about this, it looks like we're experiencing a technical problem"), whether through Banking &gt; Bank account, the "Connect your bank" setup card, or Cashbook's Money In/Money Out as an alternative. I reproduced this on two separate days, from a fresh login each time, across every entry point I could find. Everything else in the Sage account — invoicing, VAT returns, settings, reports — worked normally. This reads as a genuine, isolated fault in Sage's transaction-recording module, not user error, and it's a serious enough gap that I'm reporting it plainly rather than guessing what the feature would otherwise do.</p>
+  <p>The earlier notes describe VAT suggestions and reverse-charge handling, but disagree about the transactions and manual steps involved. Those details need checking against the original evidence. Check the tax treatment of each transaction rather than treating a software suggestion as tax advice.</p>
+  <p><strong>Sage — I could not complete this test.</strong> Every route into recording a bank transaction hit the same error page ("Sorry about this, it looks like we're experiencing a technical problem"), whether through Banking &gt; Bank account, the "Connect your bank" setup card, or Cashbook's Money In/Money Out as an alternative. I reproduced this on two separate days, from a fresh login each time, across every entry point I could find. Everything else in the Sage account — invoicing, VAT returns, settings, reports — worked normally. I have not established whether this was an account-specific issue, a temporary service fault, or a wider product problem, and it's a serious enough gap that I'm reporting it plainly rather than guessing what the feature would otherwise do.</p>
 
   <h3>VAT return</h3>
-  <p><strong>Xero's</strong> standout moment: buying a software subscription from an overseas supplier (Adobe) triggered the UK reverse-charge mechanism automatically — a notional output charge and a matching input reclaim, correctly self-cancelling, with no manual journal needed. Most small business owners have never heard of the reverse charge; Xero quietly got it right. The one real gotcha: amounts on the sales invoice screen were treated as VAT-exclusive (net first, VAT added on top), but amounts entered during bank reconciliation were treated as VAT-inclusive (gross, with VAT extracted backwards) — same software, two different conventions depending which screen you're on, an easy way to double-count VAT if you're not paying attention.</p>
+  <p>The earlier notes describe VAT suggestions and reverse-charge handling, but disagree about the transactions and manual steps involved. Those details need checking against the original evidence. Check the tax treatment of each transaction rather than treating a software suggestion as tax advice.</p>
   <p><strong>Sage's</strong> VAT return used the same standard 9-box HMRC layout as Xero's, and added one thing Xero didn't have: opting out of Making Tax Digital requires ticking an explicit acknowledgement ("I acknowledge that my business is not required to register for Making Tax Digital") before you can even open the return screen, where Xero just let you pick "VAT without MTD" with no such step. I can't compare the actual VAT figures fairly, though — because the bank reconciliation task never worked, Sage's return only reflects the one invoice raised (£90.00 VAT due on £450 of sales), with nothing to reclaim, rather than a full month of both sales and purchases the way the Xero figure does.</p>
 
   <h2>What annoyed me about each</h2>
@@ -84,8 +85,8 @@
   <p>I haven't actually migrated a chart of accounts, historical invoices, or VAT history between the two, and I'm not going to guess at how painful that is. If you're considering a switch, that's worth checking directly against each vendor's own migration documentation, or asking their support before committing — not something either of us should take on faith from a comparison page.</p>
 
   <h2>Who this is not for</h2>
-  <p><strong>Xero isn't for you</strong> if you're planning to accept its suggested nominal accounts and VAT rates without checking them — in this test it was wrong on two of five reconciled transactions, in ways that would genuinely misstate a VAT return if left uncorrected. It suits someone who wants speed and will still keep an eye on the defaults.</p>
-  <p><strong>Sage Accounting isn't for you right now</strong> if bank reconciliation matters from day one — which, realistically, is almost every UK small business. Until I can confirm this fault is fixed (on this account or a fresh one), I can't recommend Sage Accounting as a working product for that task, whatever else it does well. Worth noting separately: this is Sage's cloud product, not Sage 50, the desktop software I actually use day to day at work — the two are genuinely different products, and nothing here should be read as a verdict on Sage 50.</p>
+  <p>The earlier notes describe VAT suggestions and reverse-charge handling, but disagree about the transactions and manual steps involved. Those details need checking against the original evidence. Check the tax treatment of each transaction rather than treating a software suggestion as tax advice.</p>
+  <p><strong>Sage bank reconciliation remains unverified here.</strong> I could not complete it on this trial account in two sessions on 28–29 September. That is a limitation of this review, not evidence that the feature fails for every customer. I cannot recommend it on the strength of this test until it has been retried. Sage Accounting is the cloud product; my daily Sage 50 experience is separate.</p>
 
 </main>
 
