@@ -173,3 +173,4 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .badge { max-width: 100%; overflow-wrap: anywhere; }
 p, li { overflow-wrap: break-word; }
 @media (max-width: 520px) { nav { display: flex; flex-wrap: wrap; gap: 8px 18px; } nav a { margin-left: 0; } }
+.checklist { display: table; table-layout: fixed; } .checklist th, .checklist td { white-space: normal; vertical-align: top; overflow-wrap: anywhere; } .checklist th:first-child { width: 30%; }
