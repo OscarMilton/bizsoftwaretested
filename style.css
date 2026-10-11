@@ -165,3 +165,11 @@ footer.site a { color: var(--ink-soft); }
     h1 { font-size: 28px; }
     body { font-size: 16.5px; }
 }
+
+/* Keyboard navigation and small-screen resilience. */
+.skip-link { position: absolute; left: 16px; top: -100px; padding: 8px 12px; background: var(--bg); color: var(--ink); z-index: 10; border: 2px solid var(--accent); }
+.skip-link:focus { top: 8px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.badge { max-width: 100%; overflow-wrap: anywhere; }
+p, li { overflow-wrap: break-word; }
+@media (max-width: 520px) { nav { display: flex; flex-wrap: wrap; gap: 8px 18px; } nav a { margin-left: 0; } }
